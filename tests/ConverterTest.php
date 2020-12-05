@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase
 {
-
     public function testVerifyCurrenciesAreSet()
     {
         $convert = new Converter();
@@ -16,5 +15,4 @@ class ConverterTest extends TestCase
         $this->assertEquals('USD', $convert->baseCurrency);
         $this->assertEquals('EUR', $convert->destinationCurrency);
     }
-
 }

@@ -2,7 +2,6 @@
 
 namespace Bencoderus\BureauDeChange\Tests\Clients;
 
-use Bencoderus\BureauDeChange\Clients\CryptoClient;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -29,7 +28,6 @@ class FiatClientTest extends TestCase
             'GBP' => 2,
         ]);
 
-        $this->assertEquals('array', gettype(array($array)));
-
+        $this->assertEquals('array', gettype([$array]));
     }
 }
