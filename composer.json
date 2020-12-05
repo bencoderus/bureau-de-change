@@ -1,16 +1,26 @@
 {
   "name": "bencoderus/bureau-de-change",
   "description": "A lightweight currency converter with over 40 currencies supports (including cryptocurrencies).",
+  "keywords": [
+    "php",
+    "github",
+    "laravel",
+    "Currency Converter",
+    "laravel 6",
+    "laravel 7",
+    "laravel 8"
+  ],
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Bencoderus",
+      "name": "Benjamin Iduwe",
       "email": "bencoderus@gmail.com"
     }
   ],
   "require": {
-    "guzzlehttp/guzzle": "^7.0",
+    "php": "^7.2",
+    "guzzlehttp/guzzle": "~6|~7",
     "ext-json": "*"
   },
   "autoload": {
