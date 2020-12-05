@@ -10,7 +10,7 @@ A lightweight PHP library for currency conversion with over 40 currencies suppor
 
 ## Installation
 
-Requires PHP >= 7.0 and [composer](https://getcomposer.org/) is required to install package.
+Requires PHP >= 7.0 and [composer](https://getcomposer.org/) to install package.
 
 ```bash
 composer require bencoderus/bureau-de-change
