@@ -10,12 +10,12 @@ class FiatClientTest extends TestCase
 {
     protected $client;
 
-    public function setUp(): void
+    public function setUp()
     {
         $this->client = Mockery::mock(FiatClient::class);
     }
 
-    public function tearDown(): void
+    public function tearDown()
     {
         Mockery::close();
     }

@@ -8,37 +8,37 @@ use PHPUnit\Framework\TestCase;
 class CurrencyTest extends TestCase
 {
 
-    public function testCheckIfAValidCurrencyIsSupported(): void
+    public function testCheckIfAValidCurrencyIsSupported()
     {
         $isSupported = Currency::isSupported('USD');
         $this->assertTrue($isSupported);
     }
 
-    public function testCheckIfAnInvalidCurrencyIsSupported(): void
+    public function testCheckIfAnInvalidCurrencyIsSupported()
     {
         $isSupported = Currency::isSupported('BEN');
         $this->assertFalse($isSupported);
     }
 
-    public function testCheckIfACurrencyIsAFiatCurrency(): void
+    public function testCheckIfACurrencyIsAFiatCurrency()
     {
         $isFiat = Currency::isFiat('EUR');
         $this->assertTrue($isFiat);
     }
 
-    public function testCheckIfACurrencyIsNotAFiatCurrency(): void
+    public function testCheckIfACurrencyIsNotAFiatCurrency()
     {
         $isFiat = Currency::isFiat('BTC');
         $this->assertFalse($isFiat);
     }
 
-    public function testCheckIfACurrencyIsACryptoCurrency(): void
+    public function testCheckIfACurrencyIsACryptoCurrency()
     {
         $isCrypto = Currency::isCrypto('BTC');
         $this->assertTrue($isCrypto);
     }
 
-    public function testCheckIfACurrencyIsNotACryptoCurrency(): void
+    public function testCheckIfACurrencyIsNotACryptoCurrency()
     {
         $isCrypto = Currency::isCrypto('GBP');
         $this->assertFalse($isCrypto);
