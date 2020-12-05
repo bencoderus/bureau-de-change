@@ -1,8 +1,8 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Tests\Clients;
+namespace Bencoderus\BureauDeChange\Tests\Clients;
 
-use Bencoderus\CurrencyConverter\Clients\CryptoClient;
+use Bencoderus\BureauDeChange\Clients\CryptoClient;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 

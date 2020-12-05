@@ -1,6 +1,6 @@
 {
-  "name": "bencoderus/currency-converter",
-  "description": "This package serves a library for converting from one currency to another.",
+  "name": "bencoderus/bureau-de-change",
+  "description": "A lightweight currency converter with over 40 currencies supports (including cryptocurrencies).",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,19 +15,19 @@
   },
   "autoload": {
     "psr-4": {
-      "Bencoderus\\CurrencyConverter\\": "src/"
+      "Bencoderus\\BureauDeChange\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bencoderus\\CurrencyConverter\\Tests\\": "tests"
+      "Bencoderus\\BureauDeChange\\Tests\\": "tests"
     }
   },
   "require-dev": {
     "phpunit/phpunit": "^9.4",
     "mockery/mockery": "^1.4"
   },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    }
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
 }

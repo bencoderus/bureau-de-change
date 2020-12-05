@@ -1,14 +1,14 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Clients;
+namespace Bencoderus\BureauDeChange\Clients;
 
-use Bencoderus\CurrencyConverter\Exceptions\ClientException;
+use Bencoderus\BureauDeChange\Exceptions\ClientException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
 class CryptoClient
 {
-    public $client;
+    private $client;
 
     public function __construct()
     {
@@ -20,7 +20,7 @@ class CryptoClient
      *
      * @return mixed
      *
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function getRates()
     {

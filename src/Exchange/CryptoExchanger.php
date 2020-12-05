@@ -1,9 +1,9 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Exchange;
+namespace Bencoderus\BureauDeChange\Exchange;
 
-use Bencoderus\CurrencyConverter\Clients\CryptoClient;
-use Bencoderus\CurrencyConverter\Clients\FiatClient;
+use Bencoderus\BureauDeChange\Clients\CryptoClient;
+use Bencoderus\BureauDeChange\Clients\FiatClient;
 
 class CryptoExchanger
 {
@@ -11,7 +11,7 @@ class CryptoExchanger
      * @param string $currencyType
      * @param string|null $base
      * @return mixed
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function getRates(string $currencyType, string $base = null)
     {
@@ -27,7 +27,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToUsd(float $amount, string $from, string $to = 'USD')
     {
@@ -48,7 +48,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToCrypto(float $amount, string $from, string $to = 'BTC')
     {
@@ -70,7 +70,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertUsdToCrypto(float $amount, string $from, string $to)
     {
@@ -93,7 +93,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertFiatToFiat(float $amount, string $from, string $to = 'USD')
     {
@@ -108,7 +108,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertFiatToCrypto(float $amount, string $from, string $to = 'USD')
     {
@@ -122,7 +122,7 @@ class CryptoExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToFiat(float $amount, string $from, string $to)
     {

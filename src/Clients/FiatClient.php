@@ -1,19 +1,19 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Clients;
+namespace Bencoderus\BureauDeChange\Clients;
 
-use Bencoderus\CurrencyConverter\Exceptions\ClientException;
+use Bencoderus\BureauDeChange\Exceptions\ClientException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
 class FiatClient
 {
-    public $client;
+    private $client;
 
     public function __construct()
     {
         $this->client = new Client([
-            'base_uri' => 'https://api.exchangeratesapi.io'
+            'base_uri' => 'https://api.exchangeratesapi.io',
         ]);
     }
 
@@ -24,7 +24,7 @@ class FiatClient
      *
      * @return mixed
      *
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function getRates(string $baseCurrency)
     {

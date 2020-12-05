@@ -1,6 +1,6 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Exceptions;
+namespace Bencoderus\BureauDeChange\Exceptions;
 
 use Exception;
 

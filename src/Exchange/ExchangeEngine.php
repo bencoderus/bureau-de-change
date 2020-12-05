@@ -1,9 +1,9 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Exchange;
+namespace Bencoderus\BureauDeChange\Exchange;
 
-use Bencoderus\CurrencyConverter\Exceptions\ClientException;
-use Bencoderus\CurrencyConverter\Exceptions\UnsupportedException;
+use Bencoderus\BureauDeChange\Exceptions\ClientException;
+use Bencoderus\BureauDeChange\Exceptions\UnsupportedException;
 use Exception;
 
 class ExchangeEngine
@@ -26,7 +26,7 @@ class ExchangeEngine
      *
      * @param float $amount
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convert(float $amount)
     {
@@ -51,7 +51,6 @@ class ExchangeEngine
         } catch (Exception $error) {
             throw new ClientException('Unable to retrieve rate.');
         }
-
 
     }
 }

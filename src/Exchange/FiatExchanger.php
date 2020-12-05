@@ -1,8 +1,8 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Exchange;
+namespace Bencoderus\BureauDeChange\Exchange;
 
-use Bencoderus\CurrencyConverter\Clients\FiatClient;
+use Bencoderus\BureauDeChange\Clients\FiatClient;
 
 class FiatExchanger
 {
@@ -11,7 +11,7 @@ class FiatExchanger
      *
      * @param string $from
      * @return mixed
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function getRates(string $from)
     {
@@ -25,7 +25,7 @@ class FiatExchanger
      * @param string $from
      * @param string $to
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertFiatToFiat(float $amount, string $from, string $to)
     {
@@ -33,6 +33,5 @@ class FiatExchanger
 
         return $rates[$to] * $amount;
     }
-
 
 }

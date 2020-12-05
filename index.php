@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-use Bencoderus\CurrencyConverter\Converter;
+use Bencoderus\BureauDeChange\Converter;
 
 $convert = new Converter();
 $amount = $convert->currency('USD', 'XRP')->convert(100);

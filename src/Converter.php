@@ -1,10 +1,10 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter;
+namespace Bencoderus\BureauDeChange;
 
-use Bencoderus\CurrencyConverter\Exceptions\UnsupportedException;
-use Bencoderus\CurrencyConverter\Exchange\Currency;
-use Bencoderus\CurrencyConverter\Exchange\ExchangeEngine;
+use Bencoderus\BureauDeChange\Exceptions\UnsupportedException;
+use Bencoderus\BureauDeChange\Exchange\Currency;
+use Bencoderus\BureauDeChange\Exchange\ExchangeEngine;
 
 class Converter
 {
@@ -26,7 +26,7 @@ class Converter
      *
      * @return $this
      *
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\UnsupportedException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\UnsupportedException
      */
     public function currency(string $from, string $to): self
     {
@@ -45,7 +45,7 @@ class Converter
      *
      * @param float $amount
      * @return float|int
-     * @throws \Bencoderus\CurrencyConverter\Exceptions\ClientException
+     * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convert(float $amount)
     {

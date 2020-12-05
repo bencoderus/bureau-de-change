@@ -1,8 +1,8 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Tests;
+namespace Bencoderus\BureauDeChange\Tests;
 
-use Bencoderus\CurrencyConverter\Converter;
+use Bencoderus\BureauDeChange\Converter;
 use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase

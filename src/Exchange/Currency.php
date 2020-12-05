@@ -1,12 +1,12 @@
 <?php
 
-namespace Bencoderus\CurrencyConverter\Exchange;
+namespace Bencoderus\BureauDeChange\Exchange;
 
 class Currency
 {
     const TYPES = [
         'FIAT' => 'fiat',
-        'CRYPTO' => 'crypto'
+        'CRYPTO' => 'crypto',
     ];
 
     /**
