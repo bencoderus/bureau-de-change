@@ -52,7 +52,7 @@ class CryptoExchanger
      */
     public function convertCryptoToCrypto(float $amount, string $from, string $to = 'BTC')
     {
-        $to = strtoupper($to);
+        $to = strtolower($to);
         $from = strtolower($from);
         $rates = $this->getRates(Currency::TYPES['CRYPTO']);
 

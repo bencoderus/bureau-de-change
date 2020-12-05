@@ -65,6 +65,11 @@ class Currency
             'BCH',
             'BNB',
             'EOS',
+            'BNB',
+            'XLM',
+            'DOT',
+            'LINK',
+            'YFI',
             'XRP',
         ];
     }
