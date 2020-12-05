@@ -1,0 +1,33 @@
+{
+  "name": "bencoderus/currency-converter",
+  "description": "This package serves a library for converting from one currency to another.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bencoderus",
+      "email": "bencoderus@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bencoderus\\CurrencyConverter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bencoderus\\CurrencyConverter\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4",
+    "mockery/mockery": "^1.4"
+  },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
