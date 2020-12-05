@@ -47,10 +47,9 @@ class ExchangeEngine
                 return $this->fiat->convertFiatToFiat($amount, $this->from, $this->to);
             }
 
-            throw new UnsupportedException("Currency is not supported");
+            throw new UnsupportedException('Currency is not supported');
         } catch (Exception $error) {
             throw new ClientException('Unable to retrieve rate.');
         }
-
     }
 }

@@ -25,13 +25,11 @@ class CryptoClient
     public function getRates()
     {
         try {
-            $response = $this->client->get("/api/v3/exchange_rates");
+            $response = $this->client->get('/api/v3/exchange_rates');
 
             return json_decode($response->getBody(), true)['rates'];
-
         } catch (GuzzleException $error) {
-            throw new ClientException("Unable to retrieve rate.");
-
+            throw new ClientException('Unable to retrieve rate.');
         }
     }
 }

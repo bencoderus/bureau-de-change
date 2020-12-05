@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class CurrencyTest extends TestCase
 {
-
     public function testCheckIfAValidCurrencyIsSupported()
     {
         $isSupported = Currency::isSupported('USD');
