@@ -40,7 +40,7 @@ class CryptoExchanger
         $btcValue = 1 / $baseRate;
         $rateToUsd = $usdRate * $btcValue;
 
-        return ($amount * $rateToUsd);
+        return $amount * $rateToUsd;
     }
 
     /**
@@ -62,7 +62,7 @@ class CryptoExchanger
         $btcValue = 1 / $baseRate;
         $rateToUsd = $toRate * $btcValue;
 
-        return ($amount * $rateToUsd);
+        return $amount * $rateToUsd;
     }
 
     /**
@@ -85,7 +85,7 @@ class CryptoExchanger
         $btcValue = 1 / $baseRate;
         $rateToUsd = $toRate * $btcValue;
 
-        return ($amount * $rateToUsd);
+        return $amount * $rateToUsd;
     }
 
     /**
@@ -129,6 +129,5 @@ class CryptoExchanger
         $usd = $this->convertCryptoToUsd($amount, $from, 'USD');
 
         return $this->convertFiatToFiat($usd, 'USD', $to);
-
     }
 }

@@ -32,9 +32,8 @@ class FiatClient
             $response = $this->client->get("/latest?base={$baseCurrency}");
 
             return json_decode($response->getBody(), true)['rates'];
-
         } catch (GuzzleException $error) {
-            throw new ClientException("Unable to connect to API");
+            throw new ClientException('Unable to connect to API');
         }
     }
 }

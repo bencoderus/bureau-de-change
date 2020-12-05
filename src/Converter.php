@@ -31,7 +31,7 @@ class Converter
     public function currency(string $from, string $to): self
     {
         if (! Currency::isSupported($from) || ! Currency::isSupported($to)) {
-            throw new UnsupportedException("Currency is not supported.");
+            throw new UnsupportedException('Currency is not supported.');
         }
 
         $this->baseCurrency = $from;

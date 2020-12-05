@@ -28,6 +28,6 @@ class CryptoClientTest extends TestCase
             'eth' => ['value' => 33],
         ]);
 
-        $this->assertEquals('array', gettype(array($array)));
+        $this->assertEquals('array', gettype([$array]));
     }
 }

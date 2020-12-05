@@ -33,5 +33,4 @@ class FiatExchanger
 
         return $rates[$to] * $amount;
     }
-
 }
