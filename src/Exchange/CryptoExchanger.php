@@ -8,9 +8,13 @@ use Bencoderus\BureauDeChange\Clients\FiatClient;
 class CryptoExchanger
 {
     /**
+     * Get all rates both crypto and fiat rate.
+     *
      * @param string $currencyType
      * @param string|null $base
+     *
      * @return mixed
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function getRates(string $currencyType, string $base = null)
@@ -23,10 +27,14 @@ class CryptoExchanger
     }
 
     /**
+     * Convert Crypto to USD.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToUsd(float $amount, string $from, string $to = 'USD')
@@ -44,10 +52,14 @@ class CryptoExchanger
     }
 
     /**
+     * Convert a crypto currency to another crypto currency.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToCrypto(float $amount, string $from, string $to = 'BTC')
@@ -66,10 +78,14 @@ class CryptoExchanger
     }
 
     /**
+     * Convert USD to a crypto currency.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertUsdToCrypto(float $amount, string $from, string $to)
@@ -89,10 +105,14 @@ class CryptoExchanger
     }
 
     /**
+     * Fiat currencies conversion.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertFiatToFiat(float $amount, string $from, string $to = 'USD')
@@ -104,10 +124,14 @@ class CryptoExchanger
     }
 
     /**
+     * Convert a fiat currency to crypto.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertFiatToCrypto(float $amount, string $from, string $to = 'USD')
@@ -118,10 +142,14 @@ class CryptoExchanger
     }
 
     /**
+     * Convert a crypto currency to fiat.
+     *
      * @param float $amount
      * @param string $from
      * @param string $to
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToFiat(float $amount, string $from, string $to)

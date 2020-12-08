@@ -25,7 +25,9 @@ class ExchangeEngine
      * Convert currency from one currency (fiat, crypto) to another.
      *
      * @param float $amount
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convert(float $amount)

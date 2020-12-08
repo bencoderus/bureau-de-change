@@ -21,6 +21,7 @@ class Converter
 
     /**
      * Convert from base currency to destination currency.
+     *
      * @param string $from
      * @param string $to
      *
@@ -44,10 +45,12 @@ class Converter
      * Convert currency from base currency to destination currency.
      *
      * @param float $amount
+     *
      * @return float|int
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
-    public function convert(float $amount)
+    public function convert(float $amount): float
     {
         $convert = new ExchangeEngine($this->baseCurrency, $this->destinationCurrency);
 

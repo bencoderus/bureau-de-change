@@ -22,7 +22,7 @@ class Currency
     }
 
     /**
-     * Verifies if a currency is supported fiat currency.
+     * Verifies if a currency is a supported fiat currency.
      *
      * @param string $currency
      * @return bool
@@ -33,7 +33,7 @@ class Currency
     }
 
     /**
-     * Verifies if a currency is supported crypto currency.
+     * Verifies if a currency is a supported crypto currency.
      *
      * @param string $currency
      * @return bool
@@ -75,7 +75,7 @@ class Currency
     }
 
     /**
-     * Get the list of all the supported currencies.
+     * Get the list of all the fiat supported currencies.
      *
      * @return array
      */
