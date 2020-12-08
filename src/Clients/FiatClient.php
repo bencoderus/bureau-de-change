@@ -12,9 +12,7 @@ class FiatClient
 
     public function __construct()
     {
-        $this->client = new Client([
-            'base_uri' => 'https://api.exchangeratesapi.io',
-        ]);
+        $this->client = new Client(['base_uri' => 'https://api.exchangeratesapi.io']);
     }
 
     /**
