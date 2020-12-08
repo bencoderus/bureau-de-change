@@ -57,9 +57,9 @@ class CryptoExchanger
      * @param float $amount
      * @param string $from
      * @param string $to
-     * 
+     *
      * @return float|int
-     * 
+     *
      * @throws \Bencoderus\BureauDeChange\Exceptions\ClientException
      */
     public function convertCryptoToCrypto(float $amount, string $from, string $to = 'BTC')
