@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/bencoderus/bureau-de-change.svg?branch=master)](https://travis-ci.org/bencoderus/bureau-de-change)
 [![Latest Stable Version](https://poser.pugx.org/bencoderus/bureau-de-change/v)](//packagist.org/packages/bencoderus/bureau-de-change) 
-[![Total Downloads](https://poser.pugx.org/bencoderus/bureau-de-change/downloads)](//packagist.org/packages/bencoderus/bureau-de-change) 
-[![Latest Unstable Version](https://poser.pugx.org/bencoderus/bureau-de-change/v/unstable)](//packagist.org/packages/bencoderus/bureau-de-change) 
 [![License](https://poser.pugx.org/bencoderus/bureau-de-change/license)](//packagist.org/packages/bencoderus/bureau-de-change)
 
 A lightweight PHP library for currency conversion with over 40 currencies supports (including cryptocurrencies).
